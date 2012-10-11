@@ -1,0 +1,45 @@
+{
+    "name": "Facebook Sticky Notes",
+
+    "description": "Install the application to leave nifty sticky notes on your friends Facebook profiles.",
+    
+    "version": "1.0",
+
+    "app": {
+        "launch": {
+          "local_path": "www/index.html"
+        }
+    },
+    
+    "content_scripts": [
+     {
+        "matches": ["https://www.facebook.com/connect/login_success.html*"],
+        "css": [],
+        "js": ["js/login-content-script.js"]  
+    },
+    
+    {
+      "matches": ["*://*.facebook.com/*"],
+      "css": ["css/styles.css", "css/social-pad.css"],
+      "js": ["js/jquery.js", "js/api.js", "js/app.js", "js/stick.js", "js/content-script.js"],
+      "run_at":"document_end"
+    }
+
+    ],
+
+    "background": {
+        "page": "www/background.html"
+    },
+
+    
+    "permissions": [
+        "*://*.facebook.com/*",
+        "*://*.rocking-apps.com/*",
+        "tabs"
+    ],
+    
+    "icons": { 
+        "16" : "16.jpg",
+        "128": "128.jpg" 
+    }
+}

@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+      
+    <link rel="stylesheet" type="text/css" href="../css/social-pad.css" >
+    <title>Sticky Notes</title>
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="../js/Stick.js"></script>
+
+    
+    
+    <script type="text/javascript"> 
+        
+        //var deviceManager =new DeviceManager();
+        
+        
+        
+        
+        function start(event){
+            
+            console.log('HELLO');
+            console.log(event.pageX);
+            console.log(event.pageY);
+            new Stick('hello', 123 , 1234 , event.pageX , event.pageY);
+            
+        }
+    
+    </script>
+    
+  </head>
+
+
+    <body >
+         
+            
+        <div id="page1" class="window" onclick="start(event)">hello</div>
+            
+
+    </body>
+
+    
+</html>

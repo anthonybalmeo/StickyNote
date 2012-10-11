@@ -1,0 +1,149 @@
+/* 
+    Document   : sticky
+    Created on : Apr 20, 2012, 8:42:06 PM
+    Author     : anthonybalmeo
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+/*.window
+{
+  background: #FFFF00;
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  padding: 1px;
+  -moz-border-radius: 7px;
+  border: 2px solid #21416d;
+  -webkit-box-shadow: 0 0 30px 5px #999;
+}
+
+.window textarea
+{
+    width: 190px;
+    height: 190px;
+    border: 0;
+    background-color: transparent;
+    resize: none; 
+}*/
+
+body {
+font-family:verdana;
+font-size:15px;
+background-image:url('../img/desk.jpg');
+}
+
+a {color:#333; text-decoration:none}
+a:hover {color:#ccc; text-decoration:none}
+
+#mask {
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:9000;
+  background-color:#000;
+  display:none;
+}
+  
+#boxes .window {
+  position:fixed;
+  left:0;
+  top:0;
+  width:440px;
+  height:200px;
+  display:none;
+  z-index:9999;
+  padding:20px;
+}
+
+
+#boxes #dialog {
+  width:375px; 
+  height:203px;
+  padding:10px;
+  background-color:#ffffff;
+}
+
+#boxes #dialog1 {
+  width:375px; 
+  height:203px;
+}
+
+#dialog1 .d-header {
+  background:url(images/login-header.png) no-repeat 0 0 transparent; 
+  width:375px; 
+  height:150px;
+}
+
+#dialog1 .d-header input {
+  position:relative;
+  top:60px;
+  left:100px;
+  border:3px solid #cccccc;
+  height:22px;
+  width:200px;
+  font-size:15px;
+  padding:5px;
+  margin-top:4px;
+}
+
+#dialog1 .d-blank {
+  float:left;
+  background:url(images/login-blank.png) no-repeat 0 0 transparent; 
+  width:267px; 
+  height:53px;
+}
+
+#dialog1 .d-login {
+  float:left;
+  width:108px; 
+  height:53px;
+}
+
+#boxes #dialog2 {
+  background:url(../img/notice.png) no-repeat 0 0 transparent; 
+  width:326px; 
+  height:229px;
+  padding:50px 0 20px 25px;
+}
+
+.sticky_area
+{
+    resize:none;
+    width:285px;
+    height:140px;
+    border: none;
+    overflow: auto; 
+}
+
+.sticky_area:hover
+{
+    cursor: pointer;    
+}
+
+
+.stickyTextArea
+{
+    background:url(../img/stick.png) no-repeat 0 0 transparent; 
+    width:175px; 
+    height:175px;
+}
+
+.readonly_text
+{
+    resize:none;
+    width:168px;
+    height:128px;
+    border: none;
+    overflow: auto; 
+}
+.readonly_text:hover
+{
+    
+    cursor: pointer;    
+}

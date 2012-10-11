@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+
+    <app_id>106811816105329</app_id>
+    <app_secret>6738f5d259a7a77a0e6ddfed263c117f</app_secret>
+    
+    <app_scope>publish_stream</app_scope>
+    
+    <app_url>https://apps.facebook.com/coolstickynotes</app_url>
+    
+    <db_host>localhost</db_host>
+    <db_user>zorayrkh_sticky</db_user>
+    <db_pass>Dp^Nt7{}pVe-</db_pass>
+    <db_name>zorayrkh_sticky</db_name>
+    
+</configuration>
